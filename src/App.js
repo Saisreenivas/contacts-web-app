@@ -3,10 +3,21 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+  constructor(props){
+    super(props);
+
+    this.addItemPage = 
+  }
   render() {
     return (
       <div className="App">
-        <header className="App-header">
+        <header className="Header">
+          <p>Phone Directory</p>
+        </header>
+        <body>
+          <button onClick={this.addItemPage}>Add</button>
+        </body>
+        {/* <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             Edit <code>src/App.js</code> and save to reload.
@@ -19,7 +30,7 @@ class App extends Component {
           >
             Learn React
           </a>
-        </header>
+        </header> */}
       </div>
     );
   }
