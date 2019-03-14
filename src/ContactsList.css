@@ -1,4 +1,4 @@
-.todoListMain .theList li {
+.ContactsListMain .theList li {
   color: #333;
   background-color: rgba(255,255,255,.5);
   padding: 15px;
@@ -8,17 +8,17 @@
   transition: background-color .2s ease-out;
 }
  
-.todoListMain .theList li:hover {
+.ContactsListMain .theList li:hover {
   background-color: pink;
   cursor: pointer;
 }
 
-.todoListMain .top-bar {
+.ContactsListMain .top-bar {
   height: 50px;
   background-color: black;
 }
 
-.todoListMain .top-bar p{
+.ContactsListMain .top-bar p{
   height: 50px;
   line-height: 35px;
   margin-bottom: 0px;

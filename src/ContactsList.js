@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import TodoItems from "./TodoItems";
-import "./TodoList.css";
+import ContactItems from "./ContactItems";
+import "./ContactsList.css";
  
-class TodoList extends Component {
+class ContactsList extends Component {
   constructor(props) {
     super(props);
  
@@ -64,31 +64,29 @@ class TodoList extends Component {
   render() {
     if(this.state.page === 'allItems'){
       return (
-        <div className="todoListMain">
+        <div className="ContactsListMain">
           <div className="top-bar">
             <p>PHONE DIRECTORY</p>
           </div>
           <div className="header">
           <button className='addBtn'
-          // onClick={() => this.delete(item.key)}
           onClick={() => this.setState({
             page: 'addPage'
             })}>ADD</button>
           
           </div>
-          <TodoItems entries={this.state.items} delete={this.deleteItem}/>
+          <ContactItems entries={this.state.items} delete={this.deleteItem}/>
         </div>
       );
           }
     else if(this.state.page === 'addPage'){
       return (
-        <div className="todoListMain">
+        <div className="ContactsListMain">
           <div className="top-bar">
             <p>ADD SUBSCRIBER</p>
           </div>
           <div className="header">
             <button className="backBtn"
-            // onClick={() => this.delete(item.key)}
             onClick={() => this.setState({
               page: 'allItems'
               })}>BACK</button>
@@ -120,4 +118,4 @@ class TodoList extends Component {
   }
 }
  
-export default TodoList;
+export default ContactsList;
