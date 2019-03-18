@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import ContactsList from "./ContactsList";
   
-var destination = document.querySelector("#container")
+var destination = document.querySelector("#container");
   
 class List extends React.Component {
     render() {
